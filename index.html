@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <title>Chocolate</title>
 </head>
 <body>
-    <header>
-        <a class="logo" href="">SIMPLY Chocolate<svg class="logo-icon"><use href=""></use></svg></a>
+    <header class="header">
+        <div class="container">
+        <a class="logo" href="./index.html">Simply Chocolate<svg class="logo-icon"><use href=""></use></svg></a>
         <nav>
         <ul class="contacts">
-            <li class="item"><a class="link" href="">Home</a></li>
+            <li class="item"><a class="link" href="./index.html">Home</a></li>
             <li class="item"><a class="link" href="">How it’s made?</a></li>
             <li class="item"><a class="link" href="">Our products</a></li>
             <li class="item"><a class="link" href="">Top sellers</a></li>
@@ -18,15 +23,16 @@
         </ul>
         </nav>
         <ul class="social-list">
-            <li class="item"><a href=""><svg class="header-icon"><use href=""></use></svg></a></li>
-            <li class="item"><a href=""><svg class="header-icon"><use href=""></use></svg></a></li>
+            <li class="item"><a href=""><svg class="social-icon"><use href=""></use></svg></a></li>
+            <li class="item"><a href=""><svg class="social-icon"><use href=""></use></svg></a></li>
         </ul>
+        </div>
     </header>
     <main>
-    <section>
+    <section class="intro">
         <h2>Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
-        <button type="button">Buy now</button>
-        <button type="button">How it's made</button>
+        <button class="buy" type="button">Buy now</button>
+        <button class="button" type="button">How it's made</button>
         <a href="">scroll down</a>
     </section>
     <section class="features">
@@ -51,7 +57,8 @@
         </div>
     </section>
     <section class="taste">
-        <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
+        <div class="container">
+        <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
         <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
         <ul class="list">
             <li class="item">
@@ -71,9 +78,11 @@
                 <h3>SEMI - SWEET CHOCOLATE</h3>
             </li>
         </ul>
+        </div>
     </section>
-    <section>
-        <h2>HOW IT’S made?</h2>
+    <section class="made">
+        <div class="container">
+        <h2 class="sec-title">HOW IT’S <span>made?</span></h2>
         <video src=""></video>
         <h3 class="">Try  our chocolates today and discover the perfect balance of flavor</h3>
         <ul class="list">
@@ -93,7 +102,139 @@
                 <p class="text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
             </li>
         </ul>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+        <h2 class="sec-title">Our <span>products</span></h2>
+        <ul class="list">
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">orange</h3>
+                <p class="text">Dark chocolate</p>
+            <button type="button">45 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">apple&cranberry</h3>
+                <p class="text">Milk chocolate</p>
+            <button type="button">50 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">lime&sea salt</h3>
+                <p class="text">Dark chocolate</p>
+            <button type="button">66 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">pineapple</h3>
+                <p class="text">Dark chocolate</p>
+            <button type="button">54 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">Classic</h3>
+                <p class="text">Milk chocolate</p>
+            <button type="button">45 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">honey</h3>
+                <p class="text">Milk chocolate</p>
+            <button type="button">50 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">Roasted fruits</h3>
+                <p class="text">Dark chocolate</p>
+            <button type="button">66 UAH</button>
+            </li>
+            <li class="item">
+                <img src="" alt="">
+                <h3 class="title">Classic</h3>
+                <p class="text">White chocolate</p>
+            <button type="button">54 UAH</button>
+            </li>
+        </ul>
+        </div>
+    </section>
+    <section class="top">
+        <div class="container">
+        <ul class="list">
+            <li class="item">
+                <img src="" alt="">
+            </li>
+            <li class="item">
+                <img src="" alt="">
+            </li>
+            <li class="item">
+                <img src="" alt="">
+            </li>
+        </ul>
+        <p>Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+        <button class="buy" type="button">Buy now</button>
+        </div>
+    </section>
+    <section class="chocolate">
+        <div class="container">
+        <h2><span>chocolate</span> is loved</h2>
+        <ul class="list">
+            <li class="item">
+                <h3 class="title">Victoria Dobrzhanska</h3>
+                <p class="text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+            </li>
+            <li class="item">
+                <h3 class="title">Nazar Babenko</h3>
+                <p class="text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+            </li>
+            <li class="item">
+                <h3 class="title">Olena Kampusch</h3>
+                <p class="text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+            </li>
+        </ul>
+        <button class="button" type="button">Leave  a review</button>
+    </section>
+    <section class="explore">
+        <div class="container">
+            <h2>EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+            <p>From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
+            <button class="buy" type="button">Subscribe</button>
+        </div>
     </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <h2><span>Chocolate</span> a delicious cure for a bad day</h2>
+            <p>Contact us</p>
+            <ul class="contacts">
+            <li class="first-social-icon link">
+              <a class="link" href="info@devstudio.com"
+                ><svg class="icons">
+                  <use href="./img/symbols.svg#icon-envelope"></use></svg
+                >simplychoc@gmail.com</a
+              >
+            </li>
+            <li class="second-social-icon link">
+              <a class="link" href="tel:+380961111111"
+                ><svg class="icons">
+                  <use href="./img/symbols.svg#icon-smartphone"></use></svg
+                >+380961111111</a
+              >
+            </li>
+            </ul>
+        <ul class="social-list">
+            <li class="item"><a href=""><svg class="social-icon"><use href=""></use></svg></a></li>
+            <li class="item"><a href=""><svg class="social-icon"><use href=""></use></svg></a></li>
+        </ul>
+        <ul class="list">
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="">How it’s made?</a></li>
+            <li class="item"><a href="">Our products</a></li>
+            <li class="item"><a href="">Top sellers</a></li>
+            <li class="item"><a href="">Chocolate is loved</a></li>
+        </ul>
+        </div>
+    </footer>
 </body>
 </html>
