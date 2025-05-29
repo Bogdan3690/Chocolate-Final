@@ -1,0 +1,18 @@
+.container{
+  width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: solid 3px red;
+
+    @media screen and (min-width: var(--mobile)){
+        width: var(--mobile);
+    }   
+    @media screen and (min-width: var(--tablet)){
+        width: var(--tablet);
+        } 
+    @media screen and (min-width: var(--desktop)){
+        width: var(--desktop);
+        }   
+}

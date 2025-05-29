@@ -19,16 +19,38 @@ ul,a{
 }
 
 body{
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: var(--main-background-color);
 }
 
 img{
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.menu-button.is-open{
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+}
+
+.menu-button.is-open .icon-open{
+    display: none;
+}
+
+.menu-button .icon-open{
+    display: block;
+}
+
+.menu-button.is-open .icon-close{
+    display: block;
+}
+
+.menu-button .icon-close{
+    display: none;
 }

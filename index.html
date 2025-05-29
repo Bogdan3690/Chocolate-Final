@@ -14,6 +14,7 @@
         <div class="container">
         <a class="logo" href="./index.html">Simply Chocolate<svg class="logo-icon"><use href=""></use></svg></a>
         <nav>
+            <div class="menu" data-menu>
         <ul class="contacts">
             <li class="item"><a class="link" href="./index.html">Home</a></li>
             <li class="item"><a class="link" href="">How it’s made?</a></li>
@@ -27,13 +28,16 @@
             <li class="item"><a href=""><svg class="social-icon"><use href=""></use></svg></a></li>
         </ul>
         </div>
+        </div>
     </header>
     <main>
     <section class="intro">
+        <div class="container">
         <h2>Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
         <button class="buy" type="button">Buy now</button>
         <button class="button" type="button">How it's made</button>
-        <a href="">scroll down</a>
+        <a href="#buy-now">scroll down</a>
+        </div>
     </section>
     <section class="features">
         <div class="container">
@@ -159,7 +163,7 @@
         </ul>
         </div>
     </section>
-    <section class="top">
+    <section id="buy-now" class="top">
         <div class="container">
         <ul class="list">
             <li class="item">
@@ -236,5 +240,39 @@
         </ul>
         </div>
     </footer>
+        <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+<!--  -->
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+      (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+      
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+      
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+      
+          mobileMenuRef.classList.toggle("is-open");
+        });
+      })();
+    </script>
 </body>
 </html>
