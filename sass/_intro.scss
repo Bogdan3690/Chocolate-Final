@@ -1,0 +1,74 @@
+.intro{
+  .container{
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  padding-top: 395px;
+  padding-bottom: 20px;
+  border-radius: 100px;
+  }
+  .title{
+    font-family: Montserrat;
+    color: var(--secondary-background-color);
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -3%;
+width: 299px;
+height: 72px;
+margin-bottom: 32px;
+  }
+
+  .scroll{
+    font-family: Montserrat;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -3%;
+gap: 12px;
+color: var(--secondary-background-color);
+display: flex;
+align-items: center;
+  }
+
+.angle{
+  width: 16px;
+  height: 16px;
+  background-color: var(--secondary-background-color);
+border-radius: 100px;
+width: 28px;
+height: 28px;
+transform: rotate(-90 deg);
+}
+}
+
+// buttons
+.buttons{
+  display: flex;
+  gap: 14px;
+}
+
+  .buy{
+font-weight: 600;
+line-height: 100%;
+letter-spacing: 0%;
+background-color: var(--akcent-color);
+color: var(--secondary-background-color);
+border: transparent;
+width: 120px;
+height: 41px;
+border-radius: 100px;
+  }
+
+  .button{
+font-weight: 600;
+line-height: 100%;
+letter-spacing: 0%;
+background-color: transparent;
+border: var(--akcent-color);
+width: 120px;
+height: 41px;
+border-radius: 100px;
+color: var(--secondary-background-color);
+}

@@ -9,11 +9,18 @@ letter-spacing: -3%;
 }
 
   .contacts{
+    @media screen and (min-width: 733px){
+      display: none;
+    }   
+    
+    .social-list{
     @media screen and (max-width: 733px){
       display: none;
     }  
 }
 }
+}
+
 
 .menu{
     &.is-open{

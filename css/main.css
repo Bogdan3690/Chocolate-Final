@@ -4,7 +4,7 @@
   --secondary-background-color: #FFFFFF;
   --text-color: #212121;
   --theird-text-color: #111111B2;
-  --accent-color: #FD9222;
+  --akcent-color: #FD9222;
   --theird-bg-color: #1E1823;
   --mobile: 365px;
   --tablet: 734px;
@@ -68,13 +68,17 @@ img {
   display: none;
 }
 
+.icon {
+  width: 22px;
+}
+
 .container {
   width: 1136px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 3px red;
+  outline: solid 1px red;
 }
 @media screen and (min-width: var(--mobile)) {
   .container {
@@ -100,8 +104,13 @@ img {
   line-height: 18px;
   letter-spacing: -3%;
 }
-@media screen and (max-width: 733px) {
+@media screen and (min-width: 733px) {
   .header .contacts {
+    display: none;
+  }
+}
+@media screen and (max-width: 733px) {
+  .header .contacts .social-list {
     display: none;
   }
 }
@@ -226,4 +235,79 @@ img {
 
 .menu-button .icon-close {
   display: none;
+}
+
+.intro .container {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 395px;
+  padding-bottom: 20px;
+  border-radius: 100px;
+}
+.intro .title {
+  font-family: Montserrat;
+  color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -3%;
+  width: 299px;
+  height: 72px;
+  margin-bottom: 32px;
+}
+.intro .scroll {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -3%;
+  gap: 12px;
+  color: var(--secondary-background-color);
+  display: flex;
+  align-items: center;
+}
+.intro .angle {
+  width: 16px;
+  height: 16px;
+  background-color: var(--secondary-background-color);
+  border-radius: 100px;
+  width: 28px;
+  height: 28px;
+  transform: rotate(-90 deg);
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.buy {
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: var(--akcent-color);
+  color: var(--secondary-background-color);
+  border: transparent;
+  width: 120px;
+  height: 41px;
+  border-radius: 100px;
+}
+
+.button {
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: transparent;
+  border: var(--akcent-color);
+  width: 120px;
+  height: 41px;
+  border-radius: 100px;
+  color: var(--secondary-background-color);
+}
+
+.features {
+  background-color: var(--theird-bg-color);
+  color: var(--);
 }/*# sourceMappingURL=main.css.map */
