@@ -9,7 +9,7 @@ letter-spacing: -3%;
 }
 
   .contacts{
-    @media screen and (min-width: 733px){
+    @media screen and (max-width: 733px){
       display: none;
     }   
     

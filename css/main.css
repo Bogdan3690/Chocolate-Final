@@ -104,7 +104,7 @@ img {
   line-height: 18px;
   letter-spacing: -3%;
 }
-@media screen and (min-width: 733px) {
+@media screen and (max-width: 733px) {
   .header .contacts {
     display: none;
   }
@@ -284,6 +284,7 @@ img {
 }
 
 .buy {
+  font-family: inherit;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0%;
@@ -296,6 +297,7 @@ img {
 }
 
 .button {
+  font-family: inherit;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0%;
