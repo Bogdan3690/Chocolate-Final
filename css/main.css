@@ -2,10 +2,12 @@
   --title-color: #111111;
   --main-background-color: #e2e2e2;
   --secondary-background-color: #FFFFFF;
+  --second-text-color: #FFFFFFB2;
   --text-color: #212121;
-  --theird-text-color: #111111B2;
-  --akcent-color: #FD9222;
+  --theird-text-color: #111111;
+  --accent-color: #FD9222;
   --theird-bg-color: #1E1823;
+  --border-color: #FFFFFF80;
   --mobile: 365px;
   --tablet: 734px;
   --desktop: 1166px;
@@ -47,6 +49,10 @@ img {
   height: auto;
 }
 
+span {
+  color: var(--accent-color);
+}
+
 .menu-button.is-open {
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 50%;
@@ -66,10 +72,6 @@ img {
 
 .menu-button .icon-close {
   display: none;
-}
-
-.icon {
-  width: 22px;
 }
 
 .container {
@@ -96,13 +98,25 @@ img {
   }
 }
 
+.header .container {
+  width: var(--mobile);
+}
 .header .logo {
-  font-family: Montserrat;
+  text-transform: uppercase;
   font-weight: 700;
-  font-style: italic;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -3%;
+  color: var(--title-color);
+}
+.header span {
+  color: inherit;
+  font-style: italic;
+}
+.header .logo-icon {
+  width: 21px;
+  height: 21px;
+  padding: 4px;
 }
 @media screen and (max-width: 733px) {
   .header .contacts {
@@ -110,93 +124,13 @@ img {
   }
 }
 @media screen and (max-width: 733px) {
-  .header .contacts .social-list {
+  .header .social-list {
     display: none;
   }
 }
 
 .menu.is-open {
   display: flex;
-}
-@media screen and (max-width: 767px) {
-  .menu {
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    top: 10px;
-    left: 10px;
-    width: 480px;
-    height: 796px;
-    padding: 48px;
-    flex-direction: column;
-    justify-content: space-between;
-    display: none;
-  }
-}
-@media screen and (min-width: var(--tablet)) {
-  .menu {
-    display: flex;
-    gap: 106px;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .icons {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .contacts {
-    font-size: 34px;
-    line-height: 100%;
-    letter-spacing: 2%;
-  }
-}
-@media screen and (min-width: var(--desktop)) {
-  .menu .contacts {
-    display: flex;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .contacts .link:not(:last-child) .link {
-    color: #757575;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .contacts .link:last-child .link {
-    color: #2196F3;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .nav-list {
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .nav-list .link-list:first-child .link {
-    color: #2196F3;
-  }
-}
-.menu .second-social-icon:hover {
-  color: aqua;
-}
-@media screen and (max-width: 767px) {
-  .menu .social-list {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: var(--tablet)) {
-  .menu .social-list {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .social-list .link {
-    color: #2196F3;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 2%;
-  }
 }
 
 .menu-button {
@@ -244,10 +178,16 @@ img {
   background-position: center;
   padding-top: 395px;
   padding-bottom: 20px;
-  border-radius: 100px;
+  border-radius: 50px;
+  width: var(--mobile);
+}
+@media screen and (min-width: var(--mobile)) {
+  .intro .container {
+    width: var(--mobile);
+  }
 }
 .intro .title {
-  font-family: Montserrat;
+  font-family: inherit;
   color: var(--secondary-background-color);
   font-weight: 500;
   font-size: 20px;
@@ -258,7 +198,7 @@ img {
   margin-bottom: 32px;
 }
 .intro .scroll {
-  font-family: Montserrat;
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -288,7 +228,7 @@ img {
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0%;
-  background-color: var(--akcent-color);
+  background-color: var(--accent-color);
   color: var(--secondary-background-color);
   border: transparent;
   width: 120px;
@@ -302,14 +242,100 @@ img {
   line-height: 100%;
   letter-spacing: 0%;
   background-color: transparent;
-  border: var(--akcent-color);
+  border: var(--accent-color);
   width: 120px;
   height: 41px;
   border-radius: 100px;
   color: var(--secondary-background-color);
 }
 
-.features {
+.features .container {
+  width: var(--mobile);
   background-color: var(--theird-bg-color);
-  color: var(--);
+  padding: 20px;
+}
+@media screen and (min-width: var(--mobile)) {
+  .features .container {
+    width: var(--mobile);
+  }
+}
+.features .features-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--secondary-background-color);
+}
+.features .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: var(--second-text-color);
+  margin-top: 18px;
+  width: 308px;
+}
+.features .features-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 39px;
+  border: solid var(--border-color) 1px;
+  border-radius: 365px;
+}
+.features .item:nth-child(2) {
+  margin-top: 38px;
+}
+.features .item:nth-child(3) {
+  margin-top: 38px;
+}
+
+.taste .container {
+  width: var(--mobile);
+}
+.taste .taste-title {
+  width: 283px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -3%;
+  text-align: center;
+  margin-top: 72px;
+}
+.taste .taste-text {
+  color: var(--theird-text-color);
+  width: 335px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  margin-bottom: 32px;
+  margin-top: 24px;
+  text-align: center;
+}
+.taste .item {
+  padding: 28px;
+  width: 335px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+.taste .item:nth-child(1) {
+  margin-bottom: 20px;
+}
+.taste .item:nth-child(2) {
+  margin-bottom: 20px;
+}
+.taste .item:nth-child(3) {
+  margin-bottom: 20px;
+}
+.taste .item:nth-child(1) {
+  background-color: var(--accent-color);
+  color: var(--secondary-background-color);
+}
+.taste .item:nth-child(3) {
+  background-color: var(--theird-bg-color);
+  color: var(--secondary-background-color);
+}
+.taste .item:nth-child(2) {
+  border: solid 1px var(--accent-color);
+}
+.taste .item:nth-child(4) {
+  border: solid 1px var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

@@ -1,23 +1,38 @@
 .header{
+    .container{
+        width: var(--mobile);
+    }
+
   .logo{
-    font-family: Montserrat;
+text-transform: uppercase;
 font-weight: 700;
-font-style: italic;
 font-size: 14px;
 line-height: 18px;
 letter-spacing: -3%;
+color: var(--title-color);
 }
 
-  .contacts{
+span{
+    color: inherit;
+font-style: italic;
+}
+
+.logo-icon{
+    width: 21px;
+    height: 21px;
+    padding: 4px;
+}
+
+.contacts{
     @media screen and (max-width: 733px){
       display: none;
     }   
+}
     
-    .social-list{
+.social-list{
     @media screen and (max-width: 733px){
       display: none;
     }  
-}
 }
 }
 
@@ -26,92 +41,8 @@ letter-spacing: -3%;
     &.is-open{
         display: flex;
     }
-
-    @media screen and (max-width: 767px){
-        position: absolute;
-        background-color: rgb(0, 0, 0);
-        top: 10px;
-        left: 10px;
-        width: 480px;
-        height: 796px;
-        padding: 48px;
-        flex-direction: column;
-        justify-content: space-between;
-        display: none;
-    }
-
-    @media screen and (min-width: var(--tablet)){
-        display: flex;
-        gap: 106px;
-        align-items: center;
-    }
-
-    .icons{
-    @media screen and (max-width: 767px){
-        display: none;
-    }
-    }
-
-    .contacts{
-    @media screen and (max-width: 767px){
-font-size: 34px;
-line-height: 100%;
-letter-spacing: 2%;
-    }
-    
-    @media screen and (min-width: var(--desktop)){
-        display: flex;
-    }
-    }
-
-    .contacts .link:not(:last-child) .link{
-    @media screen and (max-width: 767px){
-        color: #757575;
-            }
-    }
-
-    .contacts .link:last-child .link{
-    @media screen and (max-width: 767px){
-        color: #2196F3;
-            }
-    }
-
-    .nav-list{ 
-        @media screen and (max-width: 767px){
-            display: block;
-        }
-    }
-
-    .nav-list .link-list:first-child .link{ 
-        @media screen and (max-width: 767px){
-        color: #2196F3;
-            }
-    }
-
-    .second-social-icon:hover{
-        color: aqua;
-
-    }
-
-    .social-list{
-        @media screen and (max-width: 767px){
-            display: flex;
-            justify-content: space-around;
-        }
-        @media screen and (min-width: var(--tablet)){
-            display: none;
-        }
-    }
-
-    .social-list .link{
-    @media screen and (max-width: 767px){
-        color: #2196F3;
-font-size: 18px;
-line-height: 22px;
-letter-spacing: 2%;
-    }
 }
-}
+
 .menu-button{
     display: flex;
     justify-content: end;

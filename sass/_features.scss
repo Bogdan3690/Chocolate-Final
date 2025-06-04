@@ -1,4 +1,45 @@
 .features{
+  .container{
+    width: var(--mobile);
   background-color: var(--theird-bg-color);
-  color: var(--);
+  padding: 20px;
+      @media screen and (min-width: var(--mobile)){
+        width: var(--mobile);
+    }   
+  }
+
+
+  .features-title{
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+  color: var(--secondary-background-color);
+  }
+
+  .text{
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: -2%;
+color: var(--second-text-color);
+margin-top: 18px;
+width: 308px;
+  }
+
+  .features-icon{
+    width: 28px;
+    height: 28px;
+margin-bottom: 39px;
+border: solid var(--border-color) 1px;
+border-radius: 365px;
+  }
+
+  .item:nth-child(2){
+    margin-top: 38px;
+  }
+
+  .item:nth-child(3){
+    margin-top: 38px;
+  }
 }
