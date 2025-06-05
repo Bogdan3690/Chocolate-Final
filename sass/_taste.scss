@@ -1,6 +1,6 @@
 .taste{
 
-  padding-top: 72px;
+  padding-top: 36px 0;
 
   .taste-title{
 font-weight: 600;
@@ -20,13 +20,22 @@ margin-top: 24px;
 text-align: center;
   }
 
-  .item{
-    padding: 28px;
-    width: 335px;
-    height: 270px;
-border-radius: 15px;
-padding: 28px 55px;
+  img{
+    width: 224px;
+height: 171px;
+  }
+
+.text{
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -2%;
 text-transform: uppercase;
+}
+
+  .item{
+border-radius: 15px;
+text-transform: uppercase;
+padding: 28px 55px;
   }
 
   .item:nth-child(1){

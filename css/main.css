@@ -1,6 +1,6 @@
 :root {
   --title-color: #111111;
-  --main-background-color: #e2e2e2;
+  --main-background-color: rgba(17, 17, 17, 0.1);
   --secondary-background-color: #FFFFFF;
   --second-text-color: #FFFFFFB2;
   --text-color: #212121;
@@ -80,7 +80,7 @@ span {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 1px red;
+  outline: solid 1px rgb(17, 255, 0);
 }
 @media screen and (min-width: 365px) {
   .container {
@@ -168,6 +168,10 @@ span {
   display: none;
 }
 
+.intro {
+  padding-bottom: 36px;
+  padding-top: 14px;
+}
 .intro .container {
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
@@ -240,6 +244,9 @@ span {
   color: var(--secondary-background-color);
 }
 
+.features {
+  padding: 36px 0;
+}
 .features .container {
   background-color: var(--theird-bg-color);
   padding: 20px;
@@ -282,7 +289,7 @@ span {
 }
 
 .taste {
-  padding-top: 72px;
+  padding-top: 36px 0;
 }
 .taste .taste-title {
   font-weight: 600;
@@ -300,13 +307,20 @@ span {
   margin-top: 24px;
   text-align: center;
 }
-.taste .item {
-  padding: 28px;
-  width: 335px;
-  height: 270px;
-  border-radius: 15px;
-  padding: 28px 55px;
+.taste img {
+  width: 224px;
+  height: 171px;
+}
+.taste .text {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
   text-transform: uppercase;
+}
+.taste .item {
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 28px 55px;
 }
 .taste .item:nth-child(1) {
   margin-bottom: 20px;
@@ -330,4 +344,46 @@ span {
 }
 .taste .item:nth-child(4) {
   border: solid 1px var(--accent-color);
+}
+
+.made {
+  padding: 36px 0;
+}
+.made .container {
+  background-color: var(--secondary-background-color);
+}
+.made .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.made .main-text {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.made .text {
+  margin-bottom: 20px;
+}
+.made video {
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.made .list {
+  list-style: circle;
+  padding: 20px 14px;
+}
+.made .main-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
 }/*# sourceMappingURL=main.css.map */

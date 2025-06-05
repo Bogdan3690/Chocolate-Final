@@ -1,0 +1,50 @@
+.made{
+  padding: 36px 0;
+
+  .container{
+    background-color: var(--secondary-background-color);
+  }
+
+  .title{
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -3%;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 32px;
+  }
+
+  .main-text{
+    margin-bottom: 20px;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0%;
+  }
+
+  
+
+  .text{
+    margin-bottom: 20px;
+  }
+
+  video{
+    width: 335px;
+height: 500px;
+border-radius: 15px;
+margin-bottom: 40px;
+  }
+
+.list{
+    list-style: circle;
+    padding: 20px 14px;
+}
+
+.main-text{
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0%;
+}
+  }
