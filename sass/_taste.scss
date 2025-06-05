@@ -1,17 +1,13 @@
 .taste{
 
-  .container{
-    width: var(--mobile);
-  }
+  padding-top: 72px;
 
   .taste-title{
-    width: 283px;
 font-weight: 600;
 font-size: 20px;
 line-height: 24px;
 letter-spacing: -3%;
 text-align: center;
-margin-top: 72px;
   }
 
   .taste-text{
@@ -27,7 +23,9 @@ text-align: center;
   .item{
     padding: 28px;
     width: 335px;
+    height: 270px;
 border-radius: 15px;
+padding: 28px 55px;
 text-transform: uppercase;
   }
 

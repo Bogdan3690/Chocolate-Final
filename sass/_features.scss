@@ -1,11 +1,7 @@
 .features{
   .container{
-    width: var(--mobile);
   background-color: var(--theird-bg-color);
   padding: 20px;
-      @media screen and (min-width: var(--mobile)){
-        width: var(--mobile);
-    }   
   }
 
 
@@ -30,9 +26,17 @@ width: 308px;
   .features-icon{
     width: 28px;
     height: 28px;
-margin-bottom: 39px;
-border: solid var(--border-color) 1px;
+  }
+
+  .wrapper{
 border-radius: 365px;
+border: solid var(--border-color) 1px;
+width: 62px;
+height: 62px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 39px;
   }
 
   .item:nth-child(2){
