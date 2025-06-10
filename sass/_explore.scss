@@ -1,12 +1,26 @@
 .explore{
+  padding: 28px 0;
+
+  .container{
   background-image: url(../img/footer-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+    padding: 62px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
 
   .title{
-    width: 291px;
     color: var(--secondary-background-color);
+    text-align: center;
   }
 
   .text{
-    width: 326px;             
+    color: var(--secondary-background-color);
+    text-align: center;
   }
 }

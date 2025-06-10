@@ -1,29 +1,33 @@
 .products{
-  @media screen and(max-widht: 364px){
+  
     .shell{
+      @media screen and (max-widht: 364px){
       display: none;
+      }
     }
-  }
 
   padding: 36px 0;
 
   
-  
   .item{
     background-color: var(--secondary-background-color);
     border-color: var(--border-color);
-    border-radius: 100px;
+    border-radius: 10%;
+    text-align: center;
+    
 
   .top-title{
 font-size: 18px;
 line-height: 24px;
 letter-spacing: -2%;
 text-transform: uppercase;
+margin-bottom: 2px;
     }
 
-    .text{
+  .text{
 font-size: 12px;
 color: #111111B2;
+margin-bottom: 18px;
     }
   }
   }

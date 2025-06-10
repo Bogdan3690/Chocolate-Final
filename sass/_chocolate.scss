@@ -1,11 +1,22 @@
 .chocolate{
-  @media screen and(max-widht: 733px){
+  @media screen and (max-widht: 733px){
     .item:nth-child(2){
       display: none;
     }
     .item:nth-child(3){
       display: none;
     }
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .shell{
+    background-color: #fff;
+    padding: 42px 18px;
+    border-radius: 5%;
   }
 
   .people{
@@ -31,7 +42,13 @@ text-align: center;
 margin-top: 18px;
   }
 
+  .wrapper{
+    display: flex;
+  }
+
   .button{
-    border-color: var(--accent-color);
+    border: solid var(--accent-color) 1px;
+    color: var(--title-color);
+    margin-top: 32px;
   }
 }
