@@ -1,5 +1,7 @@
 .features{
+
   padding: 36px 0;
+
   .container{
   background-color: var(--theird-bg-color);
   padding: 20px;
@@ -30,7 +32,7 @@ width: 308px;
 
   .wrapper{
 border-radius: 365px;
-border: solid var(--border-color) 1px;
+border: solid 1px var(--border-color);
 width: 62px;
 height: 62px;
 display: flex;

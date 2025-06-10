@@ -74,6 +74,15 @@ span {
   display: none;
 }
 
+.title {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
 .container {
   width: 1136px;
   margin-left: auto;
@@ -273,7 +282,7 @@ span {
 }
 .features .wrapper {
   border-radius: 365px;
-  border: solid var(--border-color) 1px;
+  border: solid 1px var(--border-color);
   width: 62px;
   height: 62px;
   display: flex;
@@ -348,9 +357,6 @@ span {
 
 .made {
   padding: 36px 0;
-}
-.made .container {
-  background-color: var(--secondary-background-color);
 }
 .made .title {
   font-weight: 600;
