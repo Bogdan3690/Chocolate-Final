@@ -1,5 +1,4 @@
 .top{
-  
   padding: 36px 0;
 
   .title{
@@ -15,11 +14,17 @@ margin-bottom: 32px;
   display: none;
 }
 
+.item{
+  border-radius: 15px;
+}
+
   .text{
 font-weight: 400;
 font-size: 14px;
 line-height: 18px;
 letter-spacing: -2%;
+margin-top: 20px;
+margin-bottom: 32px;
   }
 }
   .buy{

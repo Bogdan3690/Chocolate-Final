@@ -1,22 +1,13 @@
 .chocolate{
-  @media screen and (max-widht: 733px){
-    .item:nth-child(2){
-      display: none;
-    }
-    .item:nth-child(3){
-      display: none;
-    }
-  }
-
   .wrapper{
     display: flex;
     justify-content: center;
   }
 
   .shell{
-    background-color: #fff;
     padding: 42px 18px;
     border-radius: 5%;
+    background-color: aliceblue;
   }
 
   .people{
