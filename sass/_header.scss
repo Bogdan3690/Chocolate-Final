@@ -1,5 +1,7 @@
 .header{
-    
+    @media screen and (max-width: 767px){
+        position: relative;
+    }
   .logo{
 text-transform: uppercase;
 font-weight: 700;
@@ -34,25 +36,50 @@ font-style: italic;
 }
 
 .menu{
+    display: none;
     &.is-open{
         display: flex;
+        @media screen and (max-width: 733px){
+        position: absolute;
+        background-color: var(--theird-bg-color);
+        top: 10px;
+        left: 10px;
+        width: 480px;
+        height: 796px;
+        padding: 48px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    }
+
+    @media screen and (max-width: 733px){
+        display: none;
+    }
+
+    @media screen and (min-width: var(--tablet)){
+        display: flex;
+        gap: 106px;
+        align-items: center;
     }
 }
 
 .menu-button{
     display: flex;
-    justify-content: end;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    right: 145px;
+    top: 1px;
     z-index: 2;
     border: none;
+    padding: 5px;
     background-color: transparent;
-    padding: 10px;
     @media screen and (min-width: var(--tablet)){
         display: none;
     }
 }
+
+    @media screen and (max-width: 733px){
+        display: none;
+    }
 
 .menu-button.is-open{
     border: 1px solid #0000001A;
