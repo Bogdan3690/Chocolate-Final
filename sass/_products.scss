@@ -21,7 +21,16 @@
     background-color: #fafafa;
   }
 
-  button.slider{
+  .item {
+    text-align: center;
+    width: 335px;
+    padding: 32px 53px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-background-color);
+  }
+
+  .carousel-indicators .slider{
     color: var(--accent-color);
   }
 }

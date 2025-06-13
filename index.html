@@ -271,106 +271,88 @@
                 aria-label="Slide 8"
               ></button>
             </div>
-            <div class="carousel-inner">
-              <ul class="list">
-                <li class="item">
-                  <div class="carousel-item active">
+              <ul class="list carousel-inner">
+                <li class="item carousel-item active">
                     <img
                       src="./img/products-sec/orange.png"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">orange</h3>
                   <p class="text">Dark chocolate</p>
                   <button class="button" type="button">45 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="./img/products-sec/apple.png"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">apple&cranberry</h3>
                   <p class="text">Milk chocolate</p>
                   <button class="button" type="button">50 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="./img/products-sec/lime.png"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">lime&sea salt</h3>
                   <p class="text">Dark chocolate</p>
                   <button class="button" type="button">66 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="./img/products-sec/pine.png"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">pineapple</h3>
                   <p class="text">Dark chocolate</p>
                   <button class="button" type="button">54 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="/img/products-sec/classic-milk.jpg"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">Classic</h3>
                   <p class="text">Milk chocolate</p>
                   <button class="button" type="button">45 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="./img/products-sec/honey.jpg"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">honey</h3>
                   <p class="text">Milk chocolate</p>
                   <button class="button" type="button">50 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="./img/products-sec/fruits.jpg"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">Roasted fruits</h3>
                   <p class="text">Dark chocolate</p>
                   <button class="button" type="button">66 UAH</button>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
+                <li class="item carousel-item">
                     <img
                       src="./img/products-sec/classic-white.jpg"
                       class="d-block w-100"
                       alt=""
                     />
-                  </div>
                   <h3 class="top-title">Classic</h3>
                   <p class="text">White chocolate</p>
                   <button class="button" type="button">54 UAH</button>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
       </section>
@@ -539,7 +521,22 @@
         </ul>
       </div>
     </footer>
+    <!-- modal -->
     <script>
+      (() => {
+    const menuBtnRef = document.querySelector("[data-menu-button]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
+  
+    menuBtnRef.addEventListener("click", () => {
+      const expanded =
+        menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+  
+      menuBtnRef.classList.toggle("is-open");
+      menuBtnRef.setAttribute("aria-expanded", !expanded);
+  
+      mobileMenuRef.classList.toggle("is-open");
+    });
+  })();
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
         closeModalBtn: document.querySelector("[data-close-modal]"),
@@ -558,20 +555,6 @@
       function logBackdropClick() {
         console.log("Это клик в бекдроп");
       }
-      (() => {
-        const menuBtnRef = document.querySelector("[data-menu-button]");
-        const mobileMenuRef = document.querySelector("[data-menu]");
-
-        menuBtnRef.addEventListener("click", () => {
-          const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-
-          menuBtnRef.classList.toggle("is-open");
-          menuBtnRef.setAttribute("aria-expanded", !expanded);
-
-          mobileMenuRef.classList.toggle("is-open");
-        });
-      })();
     </script>
     <!-- bootstrap -->
     <script
