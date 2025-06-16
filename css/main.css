@@ -120,6 +120,11 @@ span {
   letter-spacing: -3%;
   color: var(--title-color);
 }
+@media screen and (max-width: var(--desktop)) {
+  .header .contacts .item .link {
+    color: var(--secondary-background-color);
+  }
+}
 .header span {
   color: inherit;
   font-style: italic;
@@ -129,7 +134,10 @@ span {
   height: 21px;
   padding: 4px;
 }
-@media screen and (max-width: 733px) {
+.header .contacts {
+  color: var(--secondary-background-color);
+}
+@media screen and (max-width: 364px) {
   .header .contacts {
     display: none;
   }
@@ -180,6 +188,11 @@ span {
     display: none;
   }
 }
+@media screen and (min-width: 1165px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button.is-open {
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
@@ -200,6 +213,7 @@ span {
 
 .menu-button .icon-close {
   display: none;
+  border: transparent;
 }
 
 .intro {
