@@ -33,17 +33,10 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: -2%;
 vertical-align: middle;
-
     @media screen and (max-width: 1165px) {
     display: flex;
       flex-direction: column;
       gap: 24px;
-    }
-  }
-
-  .social-list {
-    @media screen and (max-width: 1165px) {
-      display: none;
     }
   }
 }
@@ -102,4 +95,8 @@ vertical-align: middle;
 .menu-button .icon-close {
   display: none;
   border: transparent;
+}
+
+.social-icon{
+  fill: var(--secondary-background-color);
 }

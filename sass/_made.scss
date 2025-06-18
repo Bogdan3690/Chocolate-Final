@@ -18,10 +18,16 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0%;
+    @media screen and (min-width: 734px) {
+      width: 350px;
+    }
   }
 
   .text {
     margin-bottom: 20px;
+    @media screen and (min-width: 734px) {
+      width: 480px;
+    }
   }
 
   .video {
@@ -34,6 +40,10 @@
     background-size: 600px;
     background-position-y: 80%;
     background-position-x: center;
+    @media screen and (min-width: 734px) {
+      width: 614px;
+      height: 400px;
+    }
   }
 
   .list {

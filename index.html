@@ -56,13 +56,17 @@
           <ul class="social-list">
             <li class="item">
               <a href="https://www.instagram.com/"
-                ><svg class="social-icon">
+                ><svg 
+            width="24"
+            height="16" class="social-icon">
                   <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="item">
               <a href="https://x.com/"
-                ><svg class="social-icon">
+                ><svg 
+            width="24"
+            height="16" class="social-icon">
                   <use href="./img/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
@@ -77,6 +81,7 @@
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h2>
+          <div class="wrapper">
           <div class="buttons">
             <button class="buy" type="button">Buy now</button>
             <button class="button" type="button">How it's made</button>
@@ -86,6 +91,7 @@
             <svg class="icon angle">
               <use href="./img/symbol-defs.svg#icon-angle"></use></svg
           ></a>
+        </div>
         </div>
       </section>
       <section class="features">
@@ -406,8 +412,7 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
-              <ul class="list">
+              <ul class="list carousel-inner">
                 <li class="item --bs-warning">
                   <div class="carousel-item active">
                     <div class="wrapper">
@@ -469,7 +474,7 @@
                   </div>
                 </li>
               </ul>
-          </div>
+              </div>
           <button class="button" type="button">Leave a review</button>
         </div>
       </section>
@@ -501,13 +506,17 @@
         <ul class="social-list">
           <li class="item">
             <a href="https://www.instagram.com/"
-              ><svg class="social-icon">
+              ><svg 
+            width="24"
+            height="16" class="social-icon">
                 <use href="./img/symbol-defs.svg#icon-instagram"></use></svg
             ></a>
           </li>
           <li class="item">
             <a href="https://x.com/"
-              ><svg class="social-icon">
+              ><svg 
+            width="24"
+            height="16" class="social-icon">
                 <use href="./img/symbol-defs.svg#icon-twitter"></use></svg
             ></a>
           </li>
@@ -537,7 +546,7 @@
       mobileMenuRef.classList.toggle("is-open");
     });
   })();
-      const refs = {
+      <!-- const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
         closeModalBtn: document.querySelector("[data-close-modal]"),
         backdrop: document.querySelector("[data-backdrop]"),
@@ -550,11 +559,7 @@
 
       function toggleModal() {
         refs.backdrop.classList.toggle("is-hidden");
-      }
-      <!--  -->
-      function logBackdropClick() {
-        console.log("Это клик в бекдроп");
-      }
+      } -->
     </script>
     <!-- bootstrap -->
     <script

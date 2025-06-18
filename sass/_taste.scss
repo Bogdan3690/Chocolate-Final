@@ -1,5 +1,4 @@
 .taste{
-
   padding-top: 36px 0;
 
   .taste-title{
@@ -8,6 +7,11 @@ font-size: 20px;
 line-height: 24px;
 letter-spacing: -3%;
 text-align: center;
+    @media screen and (min-width: 734px){
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    } 
   }
 
   .taste-text{
@@ -18,11 +22,24 @@ letter-spacing: -2%;
 margin-bottom: 32px;
 margin-top: 24px;
 text-align: center;
+    @media screen and (min-width: 734px){
+      margin-left: auto;
+      margin-right: auto;
+      width: 505px;
+    } 
   }
 
   img{
     width: 224px;
 height: 171px;
+  }
+
+  .list {
+    @media screen and (min-width: 734px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
   }
 
 .text{
@@ -36,32 +53,32 @@ text-transform: uppercase;
 border-radius: 15px;
 text-transform: uppercase;
 padding: 28px 55px;
+    @media screen and (min-width: 734px) {
+      flex-basis: calc((100% - 55px) / 2);
+    }
   }
 
   .item:nth-child(1){
+        @media screen and (max-width: 734px) {
     margin-bottom: 20px;
-  }
-
-  .item:nth-child(2){
-    margin-bottom: 20px;
-  }
-
-  .item:nth-child(3){
-    margin-bottom: 20px;
-  }
-
-  .item:nth-child(1){
+    }
     background-color: var(--accent-color);
     color: var(--secondary-background-color);
   }
 
-    .item:nth-child(3){
+  .item:nth-child(2){
+        @media screen and (max-width: 734px) {
+    margin-bottom: 20px;
+    }
+    border: solid 1px var(--accent-color);
+  }
+
+  .item:nth-child(3){
+        @media screen and (max-width: 734px) {
+    margin-bottom: 20px;
+    }
       background-color: var(--theird-bg-color);
     color: var(--secondary-background-color);
-  }
-  
-  .item:nth-child(2){
-    border: solid 1px var(--accent-color);
   }
 
   .item:nth-child(4){

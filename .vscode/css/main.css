@@ -212,6 +212,11 @@ span {
   padding-bottom: 36px;
   padding-top: 14px;
 }
+@media screen and (min-width: var(--tablet)) {
+  .intro {
+    display: flex;
+  }
+}
 .intro .container {
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
@@ -234,15 +239,9 @@ span {
   text-align: inherit;
   text-transform: inherit;
 }
-@media screen and (min-width: 734px) {
+@media screen and (min-width: var(--tablet)) {
   .intro .title {
     width: 484px;
-  }
-}
-@media screen and (min-width: 734px) {
-  .intro .wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 }
 .intro .scroll {
@@ -269,11 +268,6 @@ span {
 .buttons {
   display: flex;
   gap: 14px;
-}
-@media screen and (min-width: var(--tablet)) {
-  .buttons {
-    display: inline-block;
-  }
 }
 
 .buy {
@@ -305,15 +299,14 @@ span {
 .features {
   padding: 36px 0;
 }
+@media screen and (min-width: var(--tablet)) {
+  .features {
+    flex-direction: -5.5555555556%;
+  }
+}
 .features .container {
   background-color: var(--theird-bg-color);
   padding: 20px;
-}
-@media screen and (min-width: 734px) {
-  .features .list {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 .features .features-title {
   font-weight: 600;
@@ -345,20 +338,11 @@ span {
   justify-content: center;
   margin-bottom: 39px;
 }
-@media screen and (min-width: 734px) {
-  .features .item {
-    flex-basis: calc((100% - 20px) / 2);
-  }
+.features .item:nth-child(2) {
+  margin-top: 38px;
 }
-@media screen and (max-width: 734px) {
-  .features .item:nth-child(2) {
-    margin-top: 38px;
-  }
-}
-@media screen and (max-width: 734px) {
-  .features .item:nth-child(3) {
-    margin-top: 38px;
-  }
+.features .item:nth-child(3) {
+  margin-top: 38px;
 }
 
 .taste {
@@ -371,13 +355,6 @@ span {
   letter-spacing: -3%;
   text-align: center;
 }
-@media screen and (min-width: 734px) {
-  .taste .taste-title {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .taste .taste-text {
   color: var(--theird-text-color);
   width: 335px;
@@ -387,23 +364,14 @@ span {
   margin-top: 24px;
   text-align: center;
 }
-@media screen and (min-width: 734px) {
+@media screen and (min-width: var(--tablet)) {
   .taste .taste-text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 505px;
+    text-align: center;
   }
 }
 .taste img {
   width: 224px;
   height: 171px;
-}
-@media screen and (min-width: 734px) {
-  .taste .list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
 }
 .taste .text {
   font-size: 14px;
@@ -416,36 +384,25 @@ span {
   text-transform: uppercase;
   padding: 28px 55px;
 }
-@media screen and (min-width: 734px) {
-  .taste .item {
-    flex-basis: calc((100% - 55px) / 2);
-  }
+.taste .item:nth-child(1) {
+  margin-bottom: 20px;
+}
+.taste .item:nth-child(2) {
+  margin-bottom: 20px;
+}
+.taste .item:nth-child(3) {
+  margin-bottom: 20px;
 }
 .taste .item:nth-child(1) {
   background-color: var(--accent-color);
   color: var(--secondary-background-color);
 }
-@media screen and (max-width: 734px) {
-  .taste .item:nth-child(1) {
-    margin-bottom: 20px;
-  }
-}
-.taste .item:nth-child(2) {
-  border: solid 1px var(--accent-color);
-}
-@media screen and (max-width: 734px) {
-  .taste .item:nth-child(2) {
-    margin-bottom: 20px;
-  }
-}
 .taste .item:nth-child(3) {
   background-color: var(--theird-bg-color);
   color: var(--secondary-background-color);
 }
-@media screen and (max-width: 734px) {
-  .taste .item:nth-child(3) {
-    margin-bottom: 20px;
-  }
+.taste .item:nth-child(2) {
+  border: solid 1px var(--accent-color);
 }
 .taste .item:nth-child(4) {
   border: solid 1px var(--accent-color);
@@ -471,18 +428,8 @@ span {
   line-height: 24px;
   letter-spacing: 0%;
 }
-@media screen and (min-width: 734px) {
-  .made .main-text {
-    width: 350px;
-  }
-}
 .made .text {
   margin-bottom: 20px;
-}
-@media screen and (min-width: 734px) {
-  .made .text {
-    width: 480px;
-  }
 }
 .made .video {
   width: 335px;
@@ -494,12 +441,6 @@ span {
   background-size: 600px;
   background-position-y: 80%;
   background-position-x: center;
-}
-@media screen and (min-width: 734px) {
-  .made .video {
-    width: 614px;
-    height: 400px;
-  }
 }
 .made .list {
   list-style: circle;
@@ -569,13 +510,11 @@ span {
   margin-top: 20px;
   margin-bottom: 32px;
 }
-.top .buy {
+
+.buy {
   margin-top: 20px;
 }
 
-.chocolate .container {
-  text-align: center;
-}
 .chocolate .wrapper {
   display: flex;
   justify-content: center;
