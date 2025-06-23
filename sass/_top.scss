@@ -1,21 +1,33 @@
 .top{
   padding: 36px 0;
 
-  .title{
-font-size: 20px;
-line-height: 24px;
-letter-spacing: -3%;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 32px;
+  .wrapper{
+      @media screen and (max-width: 734px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   }
 
-.item:nth-last-child(1) {
-  display: none;
+.list{
+  @media screen and (max-width: 734px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .item{
   border-radius: 15px;
+      @media screen and (max-width: 734px) {
+      flex-basis: calc((100% - 0px) / 2);
+    }
+}
+
+.item:nth-last-child(1) {
+  @media screen and (max-width: 1165px) {
+    display: none;
+  }
 }
 
   .text{
@@ -29,6 +41,12 @@ margin-bottom: 32px;
   
   .buy{
     margin-top: 20px;
+    text-align: center;
+}
+
+img{
+  width: 344px;
+  height: 464px;
 }
 }
   
