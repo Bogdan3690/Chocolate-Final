@@ -516,13 +516,6 @@ span {
 .products {
   padding: 36px 0;
 }
-.products .top-title {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -2%;
-  text-transform: uppercase;
-  margin-bottom: 2px;
-}
 .products .text {
   font-size: 12px;
   color: rgba(17, 17, 17, 0.6980392157);
@@ -548,14 +541,18 @@ span {
 .top {
   padding: 36px 0;
 }
-.top .title {
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -3%;
+@media screen and (min-width: 734px) {
+  .top .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top .wrapper .text {
+    width: 306px;
+  }
+}
+.top .buy {
   text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-  font-weight: 600;
 }
 @media screen and (min-width: 734px) {
   .top .list {
@@ -573,8 +570,10 @@ span {
     flex-basis: calc((100% - 0px) / 2);
   }
 }
-.top .item:nth-last-child(1) {
-  display: none;
+@media screen and (max-width: 1165px) {
+  .top .item:nth-last-child(1) {
+    display: none;
+  }
 }
 .top .text {
   font-weight: 400;
@@ -583,10 +582,6 @@ span {
   letter-spacing: -2%;
   margin-top: 20px;
   margin-bottom: 32px;
-}
-.top .buy {
-  margin-top: 20px;
-  text-align: center;
 }
 .top img {
   width: 344px;
@@ -603,7 +598,7 @@ span {
 .chocolate .shell {
   padding: 42px 18px;
   border-radius: 5%;
-  background-color: aliceblue;
+  background-color: #fff;
 }
 .chocolate .people {
   border-radius: 50%;
@@ -615,8 +610,12 @@ span {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -2%;
-  text-align: center;
   margin-top: 24px;
+}
+@media screen and (min-width: 734px) {
+  .chocolate .text {
+    width: 312px;
+  }
 }
 .chocolate .name {
   font-size: 18px;
@@ -624,9 +623,6 @@ span {
   letter-spacing: 0%;
   text-align: center;
   margin-top: 18px;
-}
-.chocolate .wrapper {
-  display: flex;
 }
 .chocolate .button {
   border: solid var(--accent-color) 1px;
@@ -652,9 +648,20 @@ span {
   color: var(--secondary-background-color);
   text-align: center;
 }
+@media screen and (min-width: 734px) {
+  .explore .title {
+    width: 390px;
+  }
+}
 .explore .text {
   color: var(--secondary-background-color);
   text-align: center;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 734px) {
+  .explore .text {
+    width: 490px;
+  }
 }
 
 .footer a, .footer p, .footer h2 {

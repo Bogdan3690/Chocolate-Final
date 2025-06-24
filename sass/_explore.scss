@@ -17,10 +17,17 @@
   .title{
     color: var(--secondary-background-color);
     text-align: center;
+    @media screen and (min-width: 734px) {
+      width: 390px;
+    }
   }
 
   .text{
     color: var(--secondary-background-color);
     text-align: center;
+    margin-bottom: 24px;
+      @media screen and (min-width: 734px) {
+      width: 490px;
+    }
   }
 }
