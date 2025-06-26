@@ -671,20 +671,52 @@ span {
   background-color: var(--theird-bg-color);
   padding: 32px 20px;
 }
-.footer .footer-contacts::after {
+.footer .contacts::before {
   content: "";
   display: block;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.1019607843);
   margin: 32px 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.1019607843);
 }
 .footer .first-social-icon {
   margin-bottom: 4px;
 }
-.footer .contacts .item {
-  margin-bottom: 18px;
+@media screen and (min-width: 734px) {
+  .footer .contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 532px;
+    margin-top: 74px;
+  }
+}
+@media screen and (min-width: 365px) {
+  .footer .contacts .item {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 734px) {
+  .footer .top-title {
+    width: 350px;
+  }
+}
+.footer .social-list {
+  display: flex;
+}
+@media screen and (min-width: 365px) {
+  .footer .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 734px) {
+  .footer .shape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .footer .text {
-  margin-top: 32px;
   margin-bottom: 14px;
   font-weight: 500;
   line-height: 18px;
