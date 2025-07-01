@@ -108,8 +108,16 @@ span {
   }
 }
 
-.header {
-  position: relative;
+@media screen and (min-width: 734px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1165px) {
+  .header {
+    position: relative;
+  }
 }
 .header .logo {
   text-transform: uppercase;
@@ -118,6 +126,9 @@ span {
   line-height: 18px;
   letter-spacing: -3%;
   color: var(--title-color);
+}
+.header .social-list {
+  display: flex;
 }
 @media screen and (max-width: 1165px) {
   .header .link {
@@ -147,6 +158,13 @@ span {
     gap: 24px;
   }
 }
+@media screen and (min-width: 734px) {
+  .header .contacts {
+    display: flex;
+    gap: 24px;
+    color: var(--title-color);
+  }
+}
 
 .menu.is-open {
   display: flex;
@@ -169,6 +187,7 @@ span {
 
 .menu-button {
   display: flex;
+  justify-content: end;
   position: absolute;
   right: 145px;
   top: 1px;
@@ -276,6 +295,11 @@ span {
     display: inline-block;
   }
 }
+@media screen and (max-width: 733px) {
+  .buttons {
+    margin-bottom: 32px;
+  }
+}
 
 .buy {
   font-family: inherit;
@@ -296,7 +320,7 @@ span {
   line-height: 100%;
   letter-spacing: 0%;
   background-color: transparent;
-  border: var(--accent-color);
+  border: solid 1px white;
   width: 120px;
   height: 41px;
   border-radius: 100px;
@@ -349,6 +373,11 @@ span {
 @media screen and (min-width: 734px) {
   .features .item {
     flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (min-width: 734px) {
+  .features .item {
+    flex-basis: calc((100% - 20px) / 3);
   }
 }
 @media screen and (max-width: 734px) {
@@ -420,6 +449,11 @@ span {
 @media screen and (min-width: 734px) {
   .taste .item {
     flex-basis: calc((100% - 55px) / 2);
+  }
+}
+@media screen and (min-width: 1164px) {
+  .taste .item {
+    flex-basis: calc((100% - 96px) / 4);
   }
 }
 .taste .item:nth-child(1) {

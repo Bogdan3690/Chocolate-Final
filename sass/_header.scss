@@ -1,5 +1,14 @@
 .header {
+  .container{
+    @media screen and (min-width: 734px) {
+    display: flex;
+    justify-content: space-between;
+    }
+    }
+
+  @media screen and (max-width: 1165px) {
   position: relative;
+  }
 
   .logo {
     text-transform: uppercase;
@@ -8,6 +17,10 @@
     line-height: 18px;
     letter-spacing: -3%;
     color: var(--title-color);
+  }
+
+  .social-list{
+    display: flex;
   }
 
   .link{
@@ -38,6 +51,11 @@ vertical-align: middle;
       flex-direction: column;
       gap: 24px;
     }
+    @media screen and (min-width: 734px) {
+    display: flex;
+    gap: 24px;
+    color: var(--title-color);
+    }
   }
 }
 
@@ -63,6 +81,7 @@ vertical-align: middle;
 
 .menu-button {
   display: flex;
+  justify-content: end;
   position: absolute;
   right: 145px;
   top: 1px;

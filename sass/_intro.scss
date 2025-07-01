@@ -66,10 +66,13 @@ transform: rotate(-90 deg);
   @media screen and (min-width: var(--tablet)){
     display: inline-block;
     } 
+  @media screen and (max-width: 733px) {
+    margin-bottom: 32px;
+    }
 }
 
   .buy{
-    font-family: inherit;
+  font-family: inherit;
 font-weight: 600;
 line-height: 100%;
 letter-spacing: 0%;
@@ -87,7 +90,7 @@ font-weight: 600;
 line-height: 100%;
 letter-spacing: 0%;
 background-color: transparent;
-border: var(--accent-color);
+border: solid 1px white;
 width: 120px;
 height: 41px;
 border-radius: 100px;
