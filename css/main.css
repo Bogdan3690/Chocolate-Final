@@ -540,6 +540,9 @@ span {
   list-style: circle;
   padding: 20px 14px;
 }
+.made .list::after {
+  border-bottom: solid 51px red;
+}
 .made .main-text {
   font-weight: 600;
   font-size: 18px;
@@ -582,6 +585,11 @@ span {
     align-items: center;
   }
   .top .wrapper .text {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 734px) and (max-width: 1166px) {
+  .top .wrapper .text {
     width: 306px;
   }
 }
@@ -594,6 +602,11 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 734px) {
+  .top .list {
+    flex-wrap: nowrap;
   }
 }
 .top .item {
@@ -622,7 +635,7 @@ span {
   height: 464px;
 }
 
-.chocolate .container {
+.chocolate {
   text-align: center;
 }
 .chocolate .wrapper {

@@ -8,7 +8,10 @@
         align-items: center;
 
         .text{
-          width: 306px;
+    @media screen and (max-width: 1166px) {
+    width: 306px;
+  }
+      width: 430px;
         }
       }
   }
@@ -23,6 +26,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+    @media screen and (min-width: 734px) {
+    flex-wrap: nowrap;
   }
 }
 

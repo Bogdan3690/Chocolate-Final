@@ -51,6 +51,10 @@
     padding: 20px 14px;
   }
 
+  .list::after{
+    border-bottom: solid 51px red;
+  }
+
   .main-text {
     font-weight: 600;
     font-size: 18px;
