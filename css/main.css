@@ -547,6 +547,24 @@ span {
 .products {
   padding: 36px 0;
 }
+.products .products-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  color: #111;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.products .swiper-button-next,
+.products .swiper-button-prev {
+  color: #fd9222;
+}
+.products .swiper-pagination-bullet-active {
+  background-color: #fd9222;
+}
 .products .text {
   font-size: 12px;
   color: rgba(17, 17, 17, 0.6980392157);
@@ -644,25 +662,51 @@ span {
 }
 
 .chocolate {
+  position: relative;
   text-align: center;
+}
+.chocolate .reviews-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.chocolate .reviews-swiper .swiper-slide:hover {
+  transform: translateY(-5px);
+}
+.chocolate .review-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.chocolate .review-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.chocolate .review-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+.chocolate .reviews-swiper .swiper-pagination-bullet {
+  background: #fd9222;
+}
+.chocolate .swiper-button-next,
+.chocolate .swiper-button-prev {
+  color: #fd9222;
 }
 .chocolate .wrapper {
   display: flex;
   justify-content: center;
   width: 335px;
 }
-.chocolate .shell {
-  position: relative;
-  padding: 42px 18px;
-  border-radius: 5%;
-  background-color: #fff;
-  width: 335px;
-  overflow: visible;
-}
 .chocolate .people {
-  position: absolute;
-  top: -40px;
-  left: 130px;
   border-radius: 50%;
   width: 80px;
   height: 80px;
