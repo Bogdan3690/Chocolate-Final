@@ -369,6 +369,11 @@
             <li class="item">
               <img src="./img/top-sec/top-1.png" alt="" />
             </li>
+                <p class="top-text">
+            Crazy enough chocolate originates from a bean just like the coffee
+            bean called Cacao. Cacao has been around for thousands of years and
+            was first discovered by the Native American tribe called the Mayans.
+          </p>
             <li class="item">
               <img src="./img/top-sec/top-2.png" alt="" />
             </li>
@@ -382,9 +387,7 @@
             bean called Cacao. Cacao has been around for thousands of years and
             was first discovered by the Native American tribe called the Mayans.
           </p>
-          <div class="button">
           <button class="buy" type="button">Buy now</button>
-          </div>
           </div>
         </div>
       </section>
@@ -417,65 +420,47 @@
               ></button>
             </div>
               <ul class="list carousel-inner">
-                <li class="item --bs-warning">
-                  <div class="carousel-item active">
-                    <div class="wrapper">
+                <li class="item shell carousel-item active">
                       <img
                         class="people"
                         src="./img/chocolate-sec/victoria.jpg"
                         class="d-block w-100"
                         alt=""
                       />
-                    </div>
-                    <div class="shell">
                       <h3 class="name">Victoria Dobrzhanska</h3>
                       <p class="text">
                         This chocolate confection is a delight! A delight! The
                         wafer is light and crisp, the hazelnut cream is smooth,
                         and the chocolate is good.
                       </p>
-                    </div>
-                  </div>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
-                    <div class="wrapper">
+                <li class="item shell carousel-item">
                       <img
                         class="people"
                         src="./img/chocolate-sec/nazar.jpg"
                         class="d-block w-100"
                         alt=""
                       />
-                    </div>
-                    <div class="shell">
                       <h3 class="name">Nazar Babenko</h3>
                       <p class="text">
                         This chocolate confection is a delight! A delight! The
                         wafer is light and crisp, the hazelnut cream is smooth,
                         and the chocolate is good.
                       </p>
-                    </div>
-                  </div>
                 </li>
-                <li class="item">
-                  <div class="carousel-item">
-                    <div class="wrapper">
+                <li class="item shell carousel-item">
                       <img
                         class="people"
                         src="./img/chocolate-sec/olena.jpg"
                         class="d-block w-100"
                         alt=""
                       />
-                    </div>
-                    <div class="shell">
                       <h3 class="name">Olena Kampusch</h3>
                       <p class="text">
                         This chocolate confection is a delight! A delight! The
                         wafer is light and crisp, the hazelnut cream is smooth,
                         and the chocolate is good.
                       </p>
-                    </div>
-                  </div>
                 </li>
               </ul>
               </div>
@@ -543,7 +528,6 @@
       (() => {
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
-  
     menuBtnRef.addEventListener("click", () => {
       const expanded =
         menuBtnRef.getAttribute("aria-expanded") === "true" || false;
@@ -554,22 +538,7 @@
       mobileMenuRef.classList.toggle("is-open");
     });
   })();
-      <!-- const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
-
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      } -->
     </script>
-    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

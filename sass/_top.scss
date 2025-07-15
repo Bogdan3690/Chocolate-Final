@@ -2,22 +2,32 @@
   padding: 36px 0;
 
   .wrapper{
+    text-align: center;
       @media screen and (min-width: 734px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+      }
         .text{
     @media screen and (max-width: 1166px) {
     width: 306px;
   }
-      width: 430px;
-        }
-      }
+    @media screen and (max-width: 735px) {
+      display: none;
   }
+}
+        }
+
+      .top-text{
+              margin-top: 20px;
+              margin-bottom: 32px;
+            @media screen and (min-width: 734px) {
+              display: none;
+  }
+        }
 
   .buy{
-    text-align: center;
+    margin-top: 20px;
   }
   
 .list{

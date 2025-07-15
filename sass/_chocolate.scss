@@ -4,15 +4,22 @@
   .wrapper{
     display: flex;
     justify-content: center;
+    width: 335px;
   }
 
   .shell{
+    position: relative;
     padding: 42px 18px;
     border-radius: 5%;
     background-color: #fff;
+    width: 335px;
+    overflow: visible;
   }
 
   .people{
+    position: absolute;
+    top: -40px;
+    left: 130px;
     border-radius: 50%;
     width: 80px;
     height: 80px;

@@ -530,12 +530,6 @@ span {
   background-position-y: 80%;
   background-position-x: center;
 }
-@media screen and (min-width: 734px) {
-  .made .video {
-    width: 614px;
-    height: 400px;
-  }
-}
 .made .list {
   list-style: circle;
   padding: 20px 14px;
@@ -578,23 +572,37 @@ span {
 .top {
   padding: 36px 0;
 }
+.top .wrapper {
+  text-align: center;
+}
 @media screen and (min-width: 734px) {
   .top .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .top .wrapper .text {
-    width: 430px;
-  }
 }
-@media screen and (min-width: 734px) and (max-width: 1166px) {
+@media screen and (max-width: 1166px) {
   .top .wrapper .text {
     width: 306px;
   }
 }
+@media screen and (max-width: 735px) {
+  .top .wrapper .text {
+    display: none;
+  }
+}
+.top .top-text {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 734px) {
+  .top .top-text {
+    display: none;
+  }
+}
 .top .buy {
-  text-align: center;
+  margin-top: 20px;
 }
 @media screen and (min-width: 734px) {
   .top .list {
@@ -641,13 +649,20 @@ span {
 .chocolate .wrapper {
   display: flex;
   justify-content: center;
+  width: 335px;
 }
 .chocolate .shell {
+  position: relative;
   padding: 42px 18px;
   border-radius: 5%;
   background-color: #fff;
+  width: 335px;
+  overflow: visible;
 }
 .chocolate .people {
+  position: absolute;
+  top: -40px;
+  left: 130px;
   border-radius: 50%;
   width: 80px;
   height: 80px;
